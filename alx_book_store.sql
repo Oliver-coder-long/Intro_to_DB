@@ -18,8 +18,8 @@ CREATE TABLE Customers(
   address TEXT
 );
 CREATE TABLE Orders(
-  order_id PRIMARY KEY
-  customer_id FOREIGN KEY REFERENCING Customers TABLE
+  order_id INT PRIMARY KEY
+  customer_id INT FOREIGN KEY REFERENCING Customers TABLE
   order_date DATE
 );
 CREATE TABLE Order_Details(
